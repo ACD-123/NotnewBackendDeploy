@@ -1,0 +1,228 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.easypost.com/v2/carrier_accounts'
+        headers:
+            Host: api.easypost.com
+            Expect: ''
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+        body: '{"carrier_account":{"type":"DhlEcsAccount","credentials":{"client_id":"123456","client_secret":"123abc","distribution_center":"USLAX1","pickup_id":"123456"},"test_credentials":{"client_id":"123456","client_secret":"123abc","distribution_center":"USLAX1","pickup_id":"123456"}}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '201'
+            message: Created
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: e26b982e639114a1e78b0e88001e4fd0
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            content-type: 'application/json; charset=utf-8'
+            content-length: '1469'
+            etag: 'W/"3080b74f06b957dd7f74814f96eeebd5"'
+            x-runtime: '0.114979'
+            x-node: bigweb5nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb1nuq 29913d444b', 'extlb2nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '{"id":"ca_e7df82788007432ca5388054940c59ae","object":"CarrierAccount","type":"DhlEcsAccount","clone":false,"created_at":"2022-12-07T22:33:05Z","updated_at":"2022-12-07T22:33:05Z","description":"DHL eCommerce Solutions Account","reference":null,"billing_type":"carrier","readable":"DHL eCommerce Solutions","logo":null,"fields":[],"credentials":[],"test_credentials":[]}'
+        curl_info:
+            url: 'https://api.easypost.com/v2/carrier_accounts'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 201
+            header_size: 737
+            request_size: 592
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.330055
+            namelookup_time: 0.001766
+            connect_time: 0.069084
+            pretransfer_time: 0.146506
+            size_upload: 277.0
+            size_download: 1469.0
+            speed_download: 4450.0
+            speed_upload: 839.0
+            download_content_length: 1469.0
+            upload_content_length: 277.0
+            starttransfer_time: 0.329927
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.130
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 58239
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 146464
+            connect_time_us: 69084
+            namelookup_time_us: 1766
+            pretransfer_time_us: 146506
+            redirect_time_us: 0
+            starttransfer_time_us: 329927
+            total_time_us: 330055
+-
+    request:
+        method: GET
+        url: 'https://api.easypost.com/v2/carrier_accounts/ca_e7df82788007432ca5388054940c59ae'
+        headers:
+            Host: api.easypost.com
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: e26b9832639114a1e78b0ea0001e4fef
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            content-type: 'application/json; charset=utf-8'
+            content-length: '1469'
+            etag: 'W/"3080b74f06b957dd7f74814f96eeebd5"'
+            x-runtime: '0.031077'
+            x-node: bigweb3nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb1nuq 29913d444b', 'extlb2nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '{"id":"ca_e7df82788007432ca5388054940c59ae","object":"CarrierAccount","type":"DhlEcsAccount","clone":false,"created_at":"2022-12-07T22:33:05Z","updated_at":"2022-12-07T22:33:05Z","description":"DHL eCommerce Solutions Account","reference":null,"billing_type":"carrier","readable":"DHL eCommerce Solutions","logo":null,"fields":[],"credentials":[],"test_credentials":[]}'
+        curl_info:
+            url: 'https://api.easypost.com/v2/carrier_accounts/ca_e7df82788007432ca5388054940c59ae'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 200
+            header_size: 732
+            request_size: 329
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.250455
+            namelookup_time: 0.002309
+            connect_time: 0.068967
+            pretransfer_time: 0.146441
+            size_upload: 0.0
+            size_download: 1469.0
+            speed_download: 5865.0
+            speed_upload: 0.0
+            download_content_length: 1469.0
+            upload_content_length: 0.0
+            starttransfer_time: 0.250403
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.130
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 58240
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 146384
+            connect_time_us: 68967
+            namelookup_time_us: 2309
+            pretransfer_time_us: 146441
+            redirect_time_us: 0
+            starttransfer_time_us: 250403
+            total_time_us: 250455
+-
+    request:
+        method: DELETE
+        url: 'https://api.easypost.com/v2/carrier_accounts/ca_e7df82788007432ca5388054940c59ae'
+        headers:
+            Host: api.easypost.com
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: e26b982c639114a1e78b0ea1001e5009
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            content-type: 'application/json; charset=utf-8'
+            content-length: '2'
+            etag: 'W/"44136fa355b3678a1146ad16f7e8649e"'
+            x-runtime: '0.125422'
+            x-node: bigweb9nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb2nuq 29913d444b', 'extlb2nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '[]'
+        curl_info:
+            url: 'https://api.easypost.com/v2/carrier_accounts/ca_e7df82788007432ca5388054940c59ae'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 200
+            header_size: 729
+            request_size: 332
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.338289
+            namelookup_time: 0.002295
+            connect_time: 0.067751
+            pretransfer_time: 0.146307
+            size_upload: 0.0
+            size_download: 2.0
+            speed_download: 5.0
+            speed_upload: 0.0
+            download_content_length: 2.0
+            upload_content_length: 0.0
+            starttransfer_time: 0.338209
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.130
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 58241
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 146255
+            connect_time_us: 67751
+            namelookup_time_us: 2295
+            pretransfer_time_us: 146307
+            redirect_time_us: 0
+            starttransfer_time_us: 338209
+            total_time_us: 338289

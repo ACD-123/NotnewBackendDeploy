@@ -1,0 +1,76 @@
+
+-
+    request:
+        method: GET
+        url: 'https://api.easypost.com/v2/events?page_size=5'
+        headers:
+            Host: api.easypost.com
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: e26b98306391149be78b0e5f001e4e26
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            content-type: 'application/json; charset=utf-8'
+            content-length: '1118'
+            etag: 'W/"3371ae4aa73b0a34df6927f7ba7e5cc3"'
+            x-runtime: '0.250077'
+            x-node: bigweb8nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb1nuq 29913d444b', 'extlb2nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '{"events":[{"description":"tracker.updated","id":"evt_1874da40767f11ed80414311e4b96355","user_id":"user_465eab8bb86844108100be2d4d5288ab","status":"pending","created_at":"2022-12-07T22:32:56.158Z","mode":"test","object":"Event"},{"description":"tracker.updated","id":"evt_1707a174767f11ed8b221726318919ec","user_id":"user_465eab8bb86844108100be2d4d5288ab","status":"pending","created_at":"2022-12-07T22:32:53.765Z","mode":"test","object":"Event"},{"description":"tracker.updated","id":"evt_16cb8784767f11edb0b24581922ef2e2","user_id":"user_465eab8bb86844108100be2d4d5288ab","status":"pending","created_at":"2022-12-07T22:32:53.371Z","mode":"test","object":"Event"},{"description":"tracker.created","id":"evt_161e0708767f11edab641fd804dc6980","user_id":"user_465eab8bb86844108100be2d4d5288ab","status":"pending","created_at":"2022-12-07T22:32:52.234Z","mode":"test","object":"Event"},{"description":"tracker.updated","id":"evt_1559ea12767f11ed8b47290572f9fb8d","user_id":"user_465eab8bb86844108100be2d4d5288ab","status":"pending","created_at":"2022-12-07T22:32:50.949Z","mode":"test","object":"Event"}],"has_more":true}'
+        curl_info:
+            url: 'https://api.easypost.com/v2/events?page_size=5'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 200
+            header_size: 732
+            request_size: 295
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.461522
+            namelookup_time: 0.001289
+            connect_time: 0.068135
+            pretransfer_time: 0.14299
+            size_upload: 0.0
+            size_download: 1118.0
+            speed_download: 2422.0
+            speed_upload: 0.0
+            download_content_length: 1118.0
+            upload_content_length: 0.0
+            starttransfer_time: 0.461486
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.130
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 58221
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 142960
+            connect_time_us: 68135
+            namelookup_time_us: 1289
+            pretransfer_time_us: 142990
+            redirect_time_us: 0
+            starttransfer_time_us: 461486
+            total_time_us: 461522

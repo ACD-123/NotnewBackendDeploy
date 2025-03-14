@@ -1,0 +1,79 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.easypost.com/v2/addresses'
+        headers:
+            Host: api.easypost.com
+            Expect: ''
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+        body: '{"verify":["true"],"address":{"company":"EasyPost","street1":"417 montgomery street","street2":"FL 5","city":"San Francisco","state":"CA","zip":"94104","country":"US","email":"test@example.com","phone":"5555555555"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '201'
+            message: Created
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: e26b982b639113f2e78aa06b001e12e1
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            location: /api/v2/addresses/adr_b604bf58767e11ed8040ac1f6bc72124
+            content-type: 'application/json; charset=utf-8'
+            content-length: '907'
+            etag: 'W/"dd7f9629d9580a4bf8085abfe160e32c"'
+            x-runtime: '0.056771'
+            x-node: bigweb5nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb2nuq 29913d444b', 'extlb2nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '{"id":"adr_b604bf58767e11ed8040ac1f6bc72124","object":"Address","created_at":"2022-12-07T22:30:11+00:00","updated_at":"2022-12-07T22:30:11+00:00","name":null,"company":"EASYPOST","street1":"417 MONTGOMERY ST FL 5","street2":"","city":"SAN FRANCISCO","state":"CA","zip":"94104-1129","country":"US","phone":"<REDACTED>","email":"<REDACTED>","mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null,"state_tax_id":null,"verifications":{"zip4":{"success":true,"errors":[{"code":"E.SECONDARY_INFORMATION.INVALID","field":"street2","message":"Invalid secondary information(Apt\/Suite#)","suggestion":null}],"details":null},"delivery":{"success":true,"errors":[{"code":"E.SECONDARY_INFORMATION.INVALID","field":"street2","message":"Invalid secondary information(Apt\/Suite#)","suggestion":null}],"details":{"latitude":37.79342,"longitude":-122.40288,"time_zone":"America\/Los_Angeles"}}}}'
+        curl_info:
+            url: 'https://api.easypost.com/v2/addresses'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 201
+            header_size: 802
+            request_size: 524
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.267153
+            namelookup_time: 0.002059
+            connect_time: 0.068515
+            pretransfer_time: 0.143096
+            size_upload: 216.0
+            size_download: 907.0
+            speed_download: 3395.0
+            speed_upload: 808.0
+            download_content_length: 907.0
+            upload_content_length: 216.0
+            starttransfer_time: 0.267112
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.130
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 57972
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 143066
+            connect_time_us: 68515
+            namelookup_time_us: 2059
+            pretransfer_time_us: 143096
+            redirect_time_us: 0
+            starttransfer_time_us: 267112
+            total_time_us: 267153

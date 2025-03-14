@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+    ecom_back:
+        image: registry.gitlab.com/mnnasib7777/ecomm_back:latest
+        ports:
+            - 4000:8000
+            - 4001:6001

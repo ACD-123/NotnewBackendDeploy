@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #FFFFFF; 
+    --secondary-color: #00000042; 
+  }
+  *{
+    padding: 0;
+    margin: 0;  
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+h1{
+    font-size: 64.64px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Cairo', sans-serif;
+    text-transform: capitalize;
+
+}
+p{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--primary-color);
+    font-family: 'Cairo', sans-serif;
+
+}
+.main-sec{
+    background-image: url('../imagesLogin/banner.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%;
+  padding: 70px 0;
+}
+
+
+
+
+
+
+
+
+/* logo and text */
+
+.logo img{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 30px;
+
+ 
+}
+.logo {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    text-align: center;
+
+}
+
+.form-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00000042;
+    padding: 100px 50px 100px 50px;
+    border-radius: 25px;
+    margin-top: 190px;
+}
+.form-sec input.form-control {
+    background-color: #E6E6E68F;
+    border: transparent;
+    border-radius: 8px;
+    padding: 15px 10px;
+    color: var(--primary-color);
+    font-family: 'Cairo', sans-serif;
+
+}
+.form-sec label {
+    font-family: 'Cairo', sans-serif;
+    color: var(--primary-color);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.form-sec ::placeholder {
+    font-family: 'Cairo', sans-serif;
+    color: var(--primary-color);
+    opacity: 1;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  .form-sec .form-group {
+    padding-bottom: 20px;
+}
+
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -33px;
+    position: relative;
+    z-index: 2;
+    padding-right: 30px;
+    font-size: 14px;
+    color: var(--primary-color);
+  }
+
+  .for-rem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.for-rem a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+button.btn.btn-primary.form_btn {
+    background: linear-gradient(to right, #00C3C9, #8B2CA0); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background 0.3s ease; 
+    width: 100%;
+}
+
+button.btn.btn-primary.form_btn:hover {
+    background: linear-gradient(to right, #8B2CA0, #00C3C9); /* Inverse gradient on hover */
+}
+
+/* forget passowrd css */
+
+
+.main-forget-sec{
+    background-image: url('../imagesLogin/Pexels\ Photo\ by\ cottonbro\ studio.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%;
+  padding: 70px 0;
+}
+
+
+.form-forget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0000008c;
+    padding: 100px 50px 100px 50px;
+    border-radius: 25px;
+    margin-top: 190px;
+}
+
+.form-forget .form-group {
+    padding-bottom: 20px;
+}
+
+.form-forget label {
+    font-family: 'Cairo', sans-serif;
+    color: var(--primary-color);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.form-forget ::placeholder {
+    font-family: 'Cairo', sans-serif;
+    color: var(--primary-color);
+    opacity: 1;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  .form-forget .form-group {
+    padding-bottom: 20px;
+}
+
+.form-forget input.form-control {
+    background-color: #8B8B8B91;
+    border: transparent;
+    border-radius: 8px;
+    padding: 15px 10px;
+    color: var(--primary-color);
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.text-sec h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.text-sec p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.otp-input {
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    font-size: 24px;
+    margin: 0 10px;
+    border: 1 solid transparent;
+    background-color: #8B8B8B91;
+    color: #ffff;
+
+}
+.form-forget .otp_btn{
+ text-align: center;
+} 
+
+.text-code-sec h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.text-code-sec p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}

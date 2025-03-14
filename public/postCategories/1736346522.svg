@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 64 64" fill="none" stroke="#0096d3">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g id="SVGRepo_iconCarrier">
+
+<circle cx="32" cy="32" r="24" fill="#ffffff"/>
+
+<circle cx="32" cy="32" r="6" fill="#ffffff"/>
+
+<line x1="38" y1="32" x2="56" y2="32" fill="#ffffff"/>
+
+<line x1="8" y1="32" x2="26.01" y2="32" fill="#ffffff"/>
+
+<line x1="48.97" y1="15.03" x2="36.21" y2="27.79" fill="#ffffff"/>
+
+<line x1="27.76" y1="36.24" x2="15.03" y2="48.97" fill="#ffffff"/>
+
+</g>
+
+</svg>

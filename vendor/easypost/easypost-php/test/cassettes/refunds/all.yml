@@ -1,0 +1,76 @@
+
+-
+    request:
+        method: GET
+        url: 'https://api.easypost.com/v2/refunds?page_size=5'
+        headers:
+            Host: api.easypost.com
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: 4d593b5f63911724e78b1b24001d5d12
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            content-type: 'application/json; charset=utf-8'
+            content-length: '1508'
+            etag: 'W/"7401df7673774e0b510fb40e7cef8801"'
+            x-runtime: '0.121216'
+            x-node: bigweb12nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb2nuq 29913d444b', 'extlb1nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '{"refunds":[{"id":"rfnd_4c32432c78f841a685ac664b6100e350","object":"Refund","created_at":"2022-12-07T22:31:34Z","updated_at":"2022-12-07T22:31:34Z","tracking_code":"9400100106068158604142","confirmation_number":null,"status":"submitted","carrier":"USPS","shipment_id":"shp_8a33d133d90b4ef9ab8eb09ae878e2cf"},{"id":"rfnd_0a28efc208ec492690769aee711b5b59","object":"Refund","created_at":"2022-12-07T21:29:46Z","updated_at":"2022-12-07T21:29:46Z","tracking_code":"9400100106068158582853","confirmation_number":null,"status":"submitted","carrier":"USPS","shipment_id":"shp_059c909ef5874ded96569c3e269f84b2"},{"id":"rfnd_cdcfe09ec6804aae8563cfc95bac2313","object":"Refund","created_at":"2022-12-07T21:22:38Z","updated_at":"2022-12-07T21:22:38Z","tracking_code":"9400100106068158579969","confirmation_number":null,"status":"submitted","carrier":"USPS","shipment_id":"shp_5a9fa8674021411bad951b19960c0465"},{"id":"rfnd_3912e9d0e14c4d66a0690b53269d27c0","object":"Refund","created_at":"2022-12-07T21:16:15Z","updated_at":"2022-12-07T21:16:15Z","tracking_code":"9400100106068158576937","confirmation_number":null,"status":"submitted","carrier":"USPS","shipment_id":"shp_909982898e894fa5937144662aac69b5"},{"id":"rfnd_c87ea1611fd14a7c8ca208b1a16572bb","object":"Refund","created_at":"2022-12-02T18:04:04Z","updated_at":"2022-12-03T18:04:04Z","tracking_code":"9400100106068156346624","confirmation_number":null,"status":"rejected","carrier":"USPS","shipment_id":"shp_85697d50eb02421693be065e5d05d075"}],"has_more":true}'
+        curl_info:
+            url: 'https://api.easypost.com/v2/refunds?page_size=5'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 200
+            header_size: 733
+            request_size: 296
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.326804
+            namelookup_time: 0.001585
+            connect_time: 0.067374
+            pretransfer_time: 0.139193
+            size_upload: 0.0
+            size_download: 1508.0
+            speed_download: 4614.0
+            speed_upload: 0.0
+            download_content_length: 1508.0
+            upload_content_length: 0.0
+            starttransfer_time: 0.326755
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.131
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 58523
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 139168
+            connect_time_us: 67374
+            namelookup_time_us: 1585
+            pretransfer_time_us: 139193
+            redirect_time_us: 0
+            starttransfer_time_us: 326755
+            total_time_us: 326804

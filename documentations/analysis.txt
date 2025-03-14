@@ -1,0 +1,36 @@
+1.	categories with sub categories
+2.	products
+	a. 	normal
+	b.	auction
+	
+3.	product attributes
+4.	watchlist
+5.	bids
+	a. may be more sub tables
+6.  recently viwed
+7.  wishlist
+8.  purchase
+9.  buy again
+10. sales
+11. savedSearches
+12. savedsellers
+13. messages
+14. watchlist
+15. purchasehistorylog
+16. search history according to user
+17. paymentlog
+18. users
+19. otp
+20. cart
+21. notifications
+22. prices(taxes or other prices)
+23. shippping details
+24. stores
+25. buy again
+26. saved sellers
+27. product details
+28. product return
+29. cart save for later
+30. user banks
+31. wallets for earnings
+32. watch history product wise

@@ -1,0 +1,154 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.easypost.com/v2/parcels'
+        headers:
+            Host: api.easypost.com
+            Expect: ''
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+        body: '{"parcel":{"length":"10","width":"8","height":"4","weight":"15.4"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '201'
+            message: Created
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: e26b982c6391146ce78b0a86001e3e99
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            location: /api/prcl_055229e82a5644539a5b121cd0dddc11/parcels
+            content-type: 'application/json; charset=utf-8'
+            content-length: '229'
+            etag: 'W/"6c3c7c884184a99510863c34feea2123"'
+            x-runtime: '0.024658'
+            x-node: bigweb11nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb1nuq 29913d444b', 'extlb2nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '{"id":"prcl_055229e82a5644539a5b121cd0dddc11","object":"Parcel","created_at":"2022-12-07T22:32:12Z","updated_at":"2022-12-07T22:32:12Z","length":10,"width":8,"height":4,"predefined_package":null,"weight":15.4,"mode":"test"}'
+        curl_info:
+            url: 'https://api.easypost.com/v2/parcels'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 201
+            header_size: 799
+            request_size: 372
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.251002
+            namelookup_time: 0.001971
+            connect_time: 0.069508
+            pretransfer_time: 0.157845
+            size_upload: 67.0
+            size_download: 229.0
+            speed_download: 912.0
+            speed_upload: 266.0
+            download_content_length: 229.0
+            upload_content_length: 67.0
+            starttransfer_time: 0.250908
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.130
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 58156
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 157789
+            connect_time_us: 69508
+            namelookup_time_us: 1971
+            pretransfer_time_us: 157845
+            redirect_time_us: 0
+            starttransfer_time_us: 250908
+            total_time_us: 251002
+-
+    request:
+        method: GET
+        url: 'https://api.easypost.com/v2/parcels/prcl_055229e82a5644539a5b121cd0dddc11'
+        headers:
+            Host: api.easypost.com
+            Accept-Encoding: ''
+            Accept: application/json
+            Authorization: ''
+            Content-Type: application/json
+            User-Agent: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            x-ep-request-uuid: e26b982c6391146ce78b0a87001e3eaf
+            cache-control: 'private, no-cache, no-store'
+            pragma: no-cache
+            expires: '0'
+            content-type: 'application/json; charset=utf-8'
+            content-length: '229'
+            etag: 'W/"6c3c7c884184a99510863c34feea2123"'
+            x-runtime: '0.020674'
+            x-node: bigweb6nuq
+            x-version-label: easypost-202212072114-cbd87d5dd7-master
+            x-backend: easypost
+            x-proxied: ['intlb1nuq 29913d444b', 'extlb2nuq 29913d444b']
+            strict-transport-security: 'max-age=31536000; includeSubDomains; preload'
+        body: '{"id":"prcl_055229e82a5644539a5b121cd0dddc11","object":"Parcel","created_at":"2022-12-07T22:32:12Z","updated_at":"2022-12-07T22:32:12Z","length":10,"width":8,"height":4,"predefined_package":null,"weight":15.4,"mode":"test"}'
+        curl_info:
+            url: 'https://api.easypost.com/v2/parcels/prcl_055229e82a5644539a5b121cd0dddc11'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 200
+            header_size: 731
+            request_size: 322
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.23697
+            namelookup_time: 0.002576
+            connect_time: 0.069508
+            pretransfer_time: 0.147281
+            size_upload: 0.0
+            size_download: 229.0
+            speed_download: 966.0
+            speed_upload: 0.0
+            download_content_length: 229.0
+            upload_content_length: 0.0
+            starttransfer_time: 0.236913
+            redirect_time: 0.0
+            redirect_url: ''
+            primary_ip: 169.62.110.130
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 10.130.6.25
+            local_port: 58157
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 147227
+            connect_time_us: 69508
+            namelookup_time_us: 2576
+            pretransfer_time_us: 147281
+            redirect_time_us: 0
+            starttransfer_time_us: 236913
+            total_time_us: 236970
