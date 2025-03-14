@@ -477,6 +477,7 @@ Route::group(['prefix' => '/products'], function () {
     Route::get('/max', [Api\ProductController::class, 'getMax']);
     Route::get('/size', [Api\ProductController::class, 'getSizes']);
     Route::get('/{product:guid}', [Api\ProductController::class, 'getProductById']);
+    Route::get('/get-by-id/{product:guid}', [Api\ProductController::class, 'getProductByMobileId']);
     
 });
 Route::group(['prefix' => '/location'], function () {

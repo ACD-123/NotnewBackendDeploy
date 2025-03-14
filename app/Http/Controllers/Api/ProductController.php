@@ -4578,4 +4578,114 @@ $product->auction_remainig_time = $remainingTimeInSeconds;
         }
     }
 
+    public function getProductByMobileId(Request $request, $id)
+    {
+        $product = Product::where('guid', $id)
+            ->with('brand')
+            ->with('category')
+            ->with('user')
+            ->with('shop')
+            // ->with('shop')->withFeedBack
+            ->first();
+        foreach ($product->getAttributes() as $key => $value) {
+            if ($value === null) {
+                unset($product->$key);
+            }
+        }
+        $product->brand = $product->brand;
+        $product->category->parent_name="";
+        if($product->category->parent_id != NULL && $product->category->parent_id != ""){
+           $parent=Category::where('id', $product->category->parent_id)->first();
+           $product->category->parent_name=$parent->name;
+
+        }
+        $test = json_decode(json_decode($product->attributes, true), true);
+        $attributes = [];
+        
+    if (isset($test)) {
+        $tempAttributes = [];
+
+        foreach ($test as $te) {
+            if (!isset($tempAttributes[$te['key']])) {
+                $tempAttributes[$te['key']] = [];
+            }
+            
+            if (is_array($te['value'])) {
+                $tempAttributes[$te['key']] = array_merge($tempAttributes[$te['key']], $te['value']);
+            } else {
+                $tempAttributes[$te['key']][] = $te['value'];
+            }
+        }
+
+        foreach ($tempAttributes as $key => $values) {
+            $data = [
+                "key" => $key,
+                "options" => $values
+            ];
+            $attributes[] = $data;
+        }
+    } else {
+        $attributes = [];
+    }
+
+        $product->attributes = $attributes;
+        if($product->auctioned==1){
+         $currentTime = Carbon::now();
+$auctionEndTime = Carbon::parse($product->auction_End_listing);
+$remainingTimeInSeconds = $auctionEndTime->diffInSeconds($currentTime);
+$product->auction_remainig_time = $remainingTimeInSeconds;
+        }
+        $sellerData = SellerData::with('feedback')->where('id', $product->shop_id)->first();
+        $sellerDataCount = FeedBack::where('product_id', $product->id)->count();//SellerData::with('feedback')->where('id', $product->shop_id)->count();
+        $feedbacks = FeedBack::where('product_id', $product->id)->get();
+        $feedbacks_ = array();
+        foreach ($feedbacks as $feedback) {
+            $newDateString = date_format($feedback->created_at, "Y-m-d");
+            // $month = $feedback->created_at->diffInMonths(Carbon::now());//Carbon::parse($newDateString)->diffInMonths(Carbon::now());
+            // $months="";
+            // if($month == 1){
+            //     $months ="month";    
+            // }
+            // else if($month > 1){
+            //     $months =$month ." month";    
+            // }
+            $data = [
+                'id' => $feedback->id,
+                'user' =>
+                    [
+                        'image' => $feedback->user->media[0]->url,
+                        'name' => $feedback->user->name . '' . $feedback->user->lastname,
+                        'period' => date_format($feedback->created_at, "Y-m-d")
+                    ],
+                'comments' => $feedback->comments,
+                'ratings'=>$feedback->ratings,
+                'productname' => $feedback->product->name
+            ];
+            array_push($feedbacks_, $data);
+        }
+        $feedback = [
+            'count' => $sellerDataCount,
+            'feedbacks' => $feedbacks_
+        ];
+        $sellerData_ = [
+            'sellerName' => $sellerData->fullname,
+            'sellerImage' => env('APP_URL') . $sellerData->cover_image,
+            'positivefeedback' => 90,
+            'feedback' => $feedback,
+            'is_favourite' => $sellerData->is_favourite,
+            'favourite_count' => $sellerData->favourite_count,
+        ];
+        $product->seller = $sellerData_;
+        // $product->length=$product->length;
+        // $product->width=$product->width;
+        // $product->weight=$product->weight;
+        // $product->height=$product->height;
+        if ($product) {
+            $product->parent_category_id=$product->category->parent_id;
+            return response()->json(['status' => true, 'data' => [$product]], 200);
+        } else {
+            return response()->json(['status' => false, 'data' => "Unable To Get Product"], 400);
+        }
+    }
+
 }
